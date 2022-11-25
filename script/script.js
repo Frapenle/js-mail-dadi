@@ -16,16 +16,16 @@ buttonElement.addEventListener("click", function(){
     if (playerOne > playerTwo) {
         userResultText.innerHTML = `<p class="output">${userOneValue} hai totalizzato ${playerOne}</p>`;
         pcResultText.innerHTML = `<p class="output">PC ha totalizzato ${playerTwo}</p>`;
-        result.innerHTML = ("HAI VINTO");
+        result.innerHTML = `<p class="green">HAI VINTO</p>`;
     } else if (playerOne < playerTwo) {
         userResultText.innerHTML = `<p class="output">${userOneValue} hai totalizzato ${playerOne}</p>`;
         pcResultText.innerHTML = `<p class="output">PC ha totalizzato ${playerTwo}</p>`;
-        result.innerHTML = ("HAI PERSO");
+        result.innerHTML = `<p class="red">HAI PERSO</p>`;
 
     } else {
         userResultText.innerHTML = `<p class="output">${userOneValue} hai totalizzato ${playerOne}</p>`;
         pcResultText.innerHTML = `<p class="output">PC ha totalizzato ${playerTwo}</p>`;
-        result.innerHTML = ("PARITÀ");
+        result.innerHTML = `<p class="yellow">PARITÀ</p>`;
     }
 })
 
