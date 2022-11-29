@@ -13,50 +13,56 @@ h1 {
     margin: 2rem 0;
 }
 
-main {
-    width: 900px;
+section {
     border-radius: 1rem;
     padding: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 1rem auto;
+    margin: 1rem 1rem;
+}
+
+section#dadi {
     box-shadow: rgba(255, 24, 24, 0.25) 0px 30px 60px -12px inset, rgba(255, 181, 10, 0.3) 0px 18px 36px -18px inset;
 }
 
-.game {
+.game,
+.form-ticket {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
 }
 
-button {
-    padding: .5rem;
-}
-
-input#user {
+input {
     border: .1px solid burlywood;
     border-radius: .5rem;
     padding: .3rem;
     font-size: 1.1rem;
 }
-input#user:focus-visible {
+input:focus-visible {
     outline: #f6b348 solid thin;
 }
 
+#player>p,
+#pc>p{
+    border-radius: .8rem;
+    padding: .3rem .6rem;
+    box-shadow: rgba(255, 107, 107, 0.129) 0px 30px 60px -12px inset, rgba(255, 197, 61, 0.158) 0px 18px 36px -18px inset;
+}
+
 .result {
-    width: 440px;
-    height: 140px;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
     border-radius: 1rem;
     background-color: #c6c6c623;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.result > p {
+    margin: 0;
 }
 
 .red {
